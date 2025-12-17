@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/flicker-docs/',
   title: "Flicker",
   description: "A lightweight, high-performance log shipping agent written in Rust.",
   head: [['link', { rel: 'icon', href: '/flicker.png' }]],
