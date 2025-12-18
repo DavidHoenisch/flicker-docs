@@ -1,12 +1,12 @@
 import {
   useMediaQuery
-} from "./chunk-4GKOY3W3.js";
+} from "./chunk-DHADXAX2.js";
 import {
   computed,
   ref,
   shallowRef,
   watch
-} from "./chunk-EKBJ2FPM.js";
+} from "./chunk-WMMYTNUP.js";
 
 // node_modules/vitepress/dist/client/theme-default/index.js
 import "/home/dhoenisch/code/flicker-docs/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";

@@ -12,6 +12,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'Features', link: '/features/registry' },
+      { text: 'Use Cases', link: '/use-cases/' },
       { text: 'Reference', link: '/reference/performance' },
       { text: 'Development', link: '/development/testing' }
     ],
@@ -38,9 +39,20 @@ export default defineConfig({
           text: 'Core Features',
           items: [
             { text: 'Registry Tracking', link: '/features/registry' },
+            { text: 'API Tailing', link: '/features/api-tailing' },
             { text: 'Docker Support', link: '/features/docker' },
             { text: 'mTLS & Security', link: '/features/mtls' },
             { text: 'Filtering & Buffering', link: '/features/filtering' }
+          ]
+        }
+      ],
+      '/use-cases/': [
+        {
+          text: 'Use Cases',
+          items: [
+            { text: 'Overview', link: '/use-cases/' },
+            { text: 'SaaS Audit Log Collection', link: '/use-cases/saas-audit-logs' },
+            { text: 'Stateless Container Deployments', link: '/use-cases/stateless-containers' }
           ]
         }
       ],
