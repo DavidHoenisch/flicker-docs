@@ -6,18 +6,18 @@ Flicker is designed for real-world log shipping scenarios. This section provides
 
 Flicker excels in these scenarios:
 
-**Traditional Log Shipping:**
-- [Application Log Aggregation](/use-cases/app-logs) - Ship logs from multiple application servers
-- [Docker Container Monitoring](/use-cases/docker-logs) - Centralize container logs from Docker hosts
-- [Kubernetes Sidecar Pattern](/use-cases/kubernetes) - Deploy Flicker as a sidecar in Kubernetes
-
 **Modern SaaS Integration:**
 - [SaaS Audit Log Collection](/use-cases/saas-audit-logs) - Pull audit logs from SaaS vendors (Okta, GitHub, etc.)
 - [Stateless Container Deployments](/use-cases/stateless-containers) - Run Flicker in ephemeral containers with S3 state
 
+**Traditional Log Shipping:**
+- Application Log Aggregation - Ship logs from multiple application servers
+- Docker Container Monitoring - Centralize container logs from Docker hosts (see [Docker Support](/features/docker))
+- Kubernetes Sidecar Pattern - Deploy Flicker as a sidecar in Kubernetes
+
 **Security & Compliance:**
-- [SIEM Integration](/use-cases/siem-integration) - Forward logs to Splunk, Elastic, or custom SIEMs
-- [Multi-Tenant Log Isolation](/use-cases/multi-tenant) - Separate log streams for different tenants
+- SIEM Integration - Forward logs to Splunk, Elastic, or custom SIEMs
+- Multi-Tenant Log Isolation - Separate log streams for different tenants
 
 ## Why Flicker?
 

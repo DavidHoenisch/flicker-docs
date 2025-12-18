@@ -559,5 +559,5 @@ aws s3api list-object-versions \
 
 For related topics:
 - [SaaS Audit Log Collection](/use-cases/saas-audit-logs)
-- [Kubernetes Deployment Guide](/use-cases/kubernetes)
+- [API Tailing Feature](/features/api-tailing)
 - [Registry Tracking Feature](/features/registry)

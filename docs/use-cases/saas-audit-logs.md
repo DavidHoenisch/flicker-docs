@@ -518,5 +518,5 @@ flicker -c config.yaml --dry-run
 
 For more deployment patterns, see:
 - [Stateless Container Deployments](/use-cases/stateless-containers)
-- [SIEM Integration](/use-cases/siem-integration)
-- [Kubernetes Deployment Guide](/use-cases/kubernetes)
+- [API Tailing Feature](/features/api-tailing)
+- [Registry Tracking](/features/registry)
