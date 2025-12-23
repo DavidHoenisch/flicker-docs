@@ -121,3 +121,33 @@ destination:
   type: "file"
   path: "/tmp/debug-output.jsonl"
 ```
+
+### S3
+Uploads logs to Amazon S3 or S3-compatible storage (MinIO, Wasabi, etc.). Logs are batched and uploaded as JSONL files with timestamped keys.
+
+**Key Format**: `{prefix}logs/YYYY-MM-DD/HH-MM-SS-{uuid}.jsonl`
+
+```yaml
+destination:
+  type: "s3"
+  bucket: "my-log-bucket"       # Required: S3 bucket name
+  prefix: "logs/myapp/"         # Optional: Key prefix
+  region: "us-west-2"           # Optional: AWS region
+```
+
+**AWS Credentials**: Loaded from environment variables:
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_REGION` (optional, can be set in config)
+
+**S3-Compatible Services**: Set these environment variables for MinIO, Wasabi, etc.:
+- `AWS_ENDPOINT_URL` - Custom S3 endpoint
+- `AWS_S3_FORCE_PATH_STYLE=true` - Required for MinIO
+
+**Example - MinIO**:
+```bash
+export AWS_ACCESS_KEY_ID="minioadmin"
+export AWS_SECRET_ACCESS_KEY="minioadmin"
+export AWS_ENDPOINT_URL="http://minio:9000"
+export AWS_S3_FORCE_PATH_STYLE="true"
+```
